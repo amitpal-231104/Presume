@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Priyadarshini Bata - Resume</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body id="body" class="bg-gradient-to-r from-gray-50 to-gray-200 text-gray-800 font-sans">
+
+  <main id="resume" class="max-w-4xl mx-auto my-10 bg-white shadow-xl rounded-xl p-8 border border-gray-300">
+    <section class="max-w-md mx-auto mt-6 text-center">
+  <div class="relative inline-block">
+    <img src="IMG_20250904_015849.jpg" alt="Priyadarshini Bata" class="w-32 h-32 rounded-full border-4 border-indigo-500 shadow-lg object-cover hover:scale-105 transition duration-300">
+    <span class="absolute bottom-0 right-0 bg-green-500 text-white text-xs px-2 py-1 rounded-full shadow-md">Active</span>
+  </div>
+  <h2 class="text-xl font-bold mt-4 text-gray-800 dark:text-white">Priyadarshini Bata</h2>
+  <p class="text-sm text-gray-600 dark:text-gray-300">Front-End Developer | Odisha, India</p>
+</section>
+    <header class="text-center mb-6">
+      <h1 class="text-4xl font-bold text-gray-900 typewriter">Priyadarshini Bata</h1>
+      <p class="text-sm text-gray-600">📍 Cuttack, Odisha | 📞 8480748760 | 📧 amarbarani@gmail.com</p>
+      <p id="clock" class="text-xs text-gray-500 mt-1"></p>
+
+      <div class="mt-4 flex justify-center gap-3 flex-wrap">
+        <button onclick="toggleDarkMode()" class="btn yellow">Dark Mode</button>
+        <button onclick="downloadPDF()" class="btn pink">Download PDF</button>
+        <button onclick="speakIntro()" class="btn green">Voice Intro</button>
+      </div>
+    </header>
+
+    <section class="mb-6 fade-in">
+      <h2 class="section-title">🎯 Career Objective</h2>
+      <p>To build a challenging profession in an organization where I can effectively contribute my knowledge and skills for the growth of the organization and gain learning experience.</p>
+    </section>
+
+    <section class="mb-6 fade-in">
+      <h2 class="section-title">📚 Educational Qualification</h2>
+      <table class="w-full text-sm border border-gray-300">
+        <thead class="bg-gray-100">
+          <tr>
+            <th>Exam</th>
+            <th>Board/University</th>
+            <th>School/College</th>
+            <th>Percentage</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>10th</td><td>BSE, Odisha</td><td>Ranihat High School</td><td>82%</td><td>2018</td></tr>
+          <tr><td>+2 Arts</td><td>CHSE, Odisha</td><td>Sreemanta Women's College</td><td>43.5%</td><td>2021</td></tr>
+          <tr><td>+3 History</td><td>Utkal University</td><td>Sreemanta Women's College</td><td>Pursuing</td><td>-</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="mb-6 fade-in">
+      <h2 class="section-title">💻 Technical Qualification</h2>
+      <p>PGDCA</p>
+    </section>
+
+    <section class="mb-6 fade-in">
+      <h2 class="section-title">💪 Strengths & Skills</h2>
+      <ul class="list-disc pl-5">
+        <li>Natural Relationship Builder</li>
+        <li>Creative Thinker</li>
+        <li>Outcome-focused Leader</li>
+        <li>Clear Communicator</li>
+      </ul>
+    </section>
+
+    <section class="mb-6 fade-in">
+      <h2 class="section-title">💼 Work Experience</h2>
+      <ul class="list-disc pl-5">
+        <li>Front Office Executive – Balaji Hospital, Cuttack (6 months)</li>
+        <li>Data Entry Operator – Redtech Solutions, CDA Sector 6 (8 months)</li>
+      </ul>
+    </section>
+
+    <section class="mb-6 fade-in">
+      <h2 class="section-title">🎨 Hobbies</h2>
+      <p>Reading Books, Singing, Traveling</p>
+    </section>
+
+    <section class="mb-6 fade-in">
+      <h2 class="section-title">🗣️ Language Proficiency</h2>
+      <p>Odia, Hindi, English</p>
+    </section>
+
+    <section class="mb-6 fade-in">
+      <h2 class="section-title">👤 Personal Profile</h2>
+      <ul class="list-disc pl-5">
+        <li>Father's Name: Amar Bata</li>
+        <li>Mother's Name: Namita Bata</li>
+        <li>Date of Birth: 10th February, 2003</li>
+        <li>Gender: Female</li>
+        <li>Marital Status: Unmarried</li>
+        <li>Nationality: Indian</li>
+        <li>Religion: Hindu</li>
+        <li>Address: Samanta Sahi, Buxibazar, Cuttack – 753001</li>
+      </ul>
+    </section>
+
+    <section class="mb-6 fade-in">
+      <h2 class="section-title">📝 Declaration</h2>
+      <p>I do hereby declare that all the information furnished is true to the best of my knowledge and belief & I bear the responsibility of its correctness.</p>
+      <p class="mt-2 text-sm text-gray-600">📍 Place: Cuttack</p>
+      <p class="text-sm text-gray-600">🗓️ Date: ____________</p>
+      <p class="mt-2 font-semibold">Signature: Priyadarshini Bata</p>
+    </section>
+    <section class="bg-white rounded-lg shadow-md p-4 mb-6">
+  <!-- andar ka content -->
+</section>
+    <header class="sticky top-0 bg-white p-4 shadow-md z-10">
+  <!-- naam aur buttons -->
+</header>
+<div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg max-w-md mx-auto text-center">
+  <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">🎙️ Voice Introduction</h2>
+  <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Listen to Priyadarshini's professional intro with your preferred voice.</p>
+
+  <div class="flex flex-col sm:flex-row justify-center items-center gap-3 mb-4">
+    <select id="voiceSelect" class="px-3 py-2 rounded-md border dark:border-gray-700 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-white">
+      <option value="">Select Voice</option>
+    </select>
+    <button onclick="speakIntro()" class="btn green">▶️ Play Intro</button>
+  </div>
+
+  <div class="flex justify-center gap-2">
+    <button onclick="speechSynthesis.pause()" class="btn gray">⏸ Pause</button>
+    <button onclick="speechSynthesis.resume()" class="btn gray">▶ Resume</button>
+    <button onclick="speechSynthesis.cancel()" class="btn red">⏹ Stop</button>
+  </div>
+
+  <p id="voiceStatus" class="text-green-500 text-xs mt-3 hidden">🔊 Speaking...</p>
+</div>
+
+    <footer class="text-center text-xs text-gray-500 mt-10">
+      © 2025 Priyadarshini Bata | Designed by Amit 💼
+    </footer>
+  </main>
+  <button onclick="downloadPDF()" class="fixed bottom-6 right-6 bg-pink-500 text-white p-4 rounded-full shadow-lg">
+  ⬇️
+</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
